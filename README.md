@@ -1,7 +1,7 @@
 # Raspberry Pi 4 Model B
 
-[![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_rpi4.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_rpi4)
-[![Hex version](https://img.shields.io/hexpm/v/nerves_system_rpi4.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi4)
+[![CircleCI](https://circleci.com/gh/nerves-project/kiosk_system_rpi4.svg?style=svg)](https://circleci.com/gh/nerves-project/kiosk_system_rpi4)
+[![Hex version](https://img.shields.io/hexpm/v/kiosk_system_rpi4.svg "Hex version")](https://hex.pm/packages/kiosk_system_rpi4)
 
 This is the base Nerves System configuration for the Raspberry Pi 4 Model B.
 

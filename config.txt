@@ -28,8 +28,8 @@ dtparam=audio=on
 # Raspberry Pi 7" Touchscreen. It appears to be harmless for non-touchscreen
 # users, but if not, let us know!
 # NOTE: The touchscreen seems to work fine with these commented out on the RPi4
-#dtoverlay=rpi-ft5406
-#dtoverlay=rpi-backlight
+dtoverlay=rpi-ft5406
+dtoverlay=rpi-backlight
 
 # Comment this in or modify to enable OneWire
 # NOTE: check that the overlay that you specify is in the boot partition or

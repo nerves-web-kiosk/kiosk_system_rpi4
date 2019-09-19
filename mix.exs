@@ -1,10 +1,11 @@
-defmodule NervesSystemRpi4.MixProject do
+defmodule KioskSystemRpi4.MixProject do
   use Mix.Project
 
-  @app :nerves_system_rpi4
+  @app :kiosk_system_rpi4
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
+
 
   def project do
     [
