@@ -21,7 +21,7 @@ defmodule Example.MixProject do
   def application do
     [
       mod: {Example.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :os_mon]
     ]
   end
 
@@ -42,6 +42,7 @@ defmodule Example.MixProject do
 
       # Dependencies for all targets except :host
       {:nerves_pack, "~> 0.7.0", targets: @all_targets},
+      {:example_ui, path: "../example_ui", targets: @all_targets, env: Mix.env()},
 
       # Dependencies for specific targets
       {:kiosk_system_rpi4, path: "..", runtime: false, targets: :rpi4}

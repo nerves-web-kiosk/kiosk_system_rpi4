@@ -71,6 +71,31 @@ config :mdns_lite,
     }
   ]
 
+config :example_ui, ExampleUiWeb.Endpoint,
+  url: [host: "localhost", port: 4001, scheme: "http"],
+  adapter: Bandit.PhoenixAdapter,
+  render_errors: [
+    formats: [html: ExampleUiWeb.ErrorHTML, json: ExampleUiWeb.ErrorJSON],
+    layout: false
+  ],
+  http: [port: 4001],
+  check_origin: false,
+  render_errors: [view: MyAppUiWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: ExampleUi.PubSub,
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  secret_key_base: "HEY05EB1dFVSu6KykKHuS4rQPQzSHv4F7mGVB/gnDLrIu75wE/ytBXy2TaL3A6RA",
+  live_view: [signing_salt: "AAAABjEyERMkxgDh"],
+  # Start the server since we're running in a release instead of through `mix`
+  server: true,
+  # Nerves root filesystem is read-only, so disable the code reloader
+  code_reloader: false
+
+# Use Jason for JSON parsing in Phoenix
+config :phoenix, :json_library, Jason
+
+# Enable dev routes for dashboard and mailbox
+config :example_ui, dev_routes: true
+
 # Import target specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 # Uncomment to use target specific configurations

@@ -14,7 +14,7 @@ defmodule Example.Application do
        daemon_opts: [log_output: :info, stderr_to_stdout: true],
        cli_args: ["--shell=kiosk-shell.so"]},
       {NervesCog,
-       url: "http://localhost:4000",
+       url: "http://localhost:4001/dev/dashboard/home",
        fullscreen: true,
        xdg_runtime_dir: @xdg_runtime_dir,
        wayland_display: "wayland-1",
