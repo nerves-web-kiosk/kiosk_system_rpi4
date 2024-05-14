@@ -10,7 +10,8 @@ defmodule Example.API do
         <title>Kiosk</title>
       </head>
       <body style="display: flex; align-items: center; justify-content: center;">
-        <h1>Hello!</h1>
+        <h1>Hello GigCityElixir!</h1>
+        <p>Pojiro, can you believe this works!!!!!!</p>
       </body>
     </html>
     """

@@ -7,12 +7,18 @@ defmodule Example.Application do
   def start(_type, _args) do
     children = [
       {Plug.Cowboy, scheme: :http, plug: Example.API, options: [port: 4000]},
-      {NervesWeston, tty: 1, xdg_runtime_dir: @xdg_runtime_dir, name: :weston},
+      {NervesWeston,
+       tty: 1,
+       xdg_runtime_dir: @xdg_runtime_dir,
+       name: :weston,
+       daemon_opts: [log_output: :info, stderr_to_stdout: true],
+       cli_args: ["--shell=kiosk-shell.so"]},
       {NervesCog,
        url: "http://localhost:4000",
        fullscreen: true,
        xdg_runtime_dir: @xdg_runtime_dir,
        wayland_display: "wayland-1",
+       daemon_opts: [log_output: :info, stderr_to_stdout: true],
        name: :cog}
     ]
 

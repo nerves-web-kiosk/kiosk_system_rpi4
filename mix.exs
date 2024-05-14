@@ -1,7 +1,7 @@
 defmodule KioskSystemRpi4.MixProject do
   use Mix.Project
 
-  @github_organization "coop"
+  @github_organization "fhunleth"
   @app :kiosk_system_rpi4
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
@@ -75,9 +75,7 @@ defmodule KioskSystemRpi4.MixProject do
   end
 
   defp description do
-    """
-    Kiosk System - Raspberry Pi 4
-    """
+    "Kiosk System - Raspberry Pi 4 (64-bits)"
   end
 
   defp docs do
