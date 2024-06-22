@@ -1,7 +1,7 @@
 defmodule Example.Application do
   use Application
 
-  @xdg_runtime_dir "/tmp/nerves_weston"
+  @xdg_runtime_dir "/run"
 
   @impl true
   def start(_type, _args) do
