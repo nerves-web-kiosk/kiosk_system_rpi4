@@ -10,8 +10,7 @@ defmodule Example.API do
         <title>Kiosk</title>
       </head>
       <body style="display: flex; align-items: center; justify-content: center;">
-        <h1>Hello GigCityElixir!</h1>
-        <p>Pojiro, can you believe this works!!!!!!</p>
+        <a href="http://localhost:4001/dev/dashboard/home">Dashboard</a>
       </body>
     </html>
     """
