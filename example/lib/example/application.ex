@@ -18,6 +18,7 @@ defmodule Example.Application do
        fullscreen: true,
        xdg_runtime_dir: @xdg_runtime_dir,
        wayland_display: "wayland-1",
+       cli_args: ["--enable-write-console-messages-to-stdout=1"],
        daemon_opts: [log_output: :info, stderr_to_stdout: true],
        name: :cog}
     ]
