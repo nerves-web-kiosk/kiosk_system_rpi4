@@ -38,7 +38,8 @@ defmodule Example.MixProject do
       {:nerves_runtime, "~> 0.13.0"},
       {:plug_cowboy, "~> 2.0"},
       {:nerves_weston, github: "fhunleth/nerves_weston"},
-      {:nerves_cog, github: "coop/nerves_cog"},
+      {:nerves_cog, path: "~/git/coop/nerves_cog"},
+      {:nerves_ssh, path: "~/git/nerves-project/nerves_ssh", override: true},
 
       # Dependencies for all targets except :host
       {:nerves_pack, "~> 0.7.0", targets: @all_targets},
