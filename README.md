@@ -4,6 +4,14 @@ This is a specialised version of the
 [nerves_system_rpi4](https://github.com/nerves-project/nerves_system_rpi4) that
 includes the required packages to run a fullscreen web browser in kiosk mode.
 
+This is a work-in-progress to bring a maintained open source web kiosk back to
+Nerves. Thanks to the following people and their code that they shared:
+
+* [Tim Cooper's RPi4 Kiosk](https://github.com/coop/kiosk_system_rpi4)
+* [Tom Winkler's reTerminal DM Kiosk](https://github.com/formrausch/frio_rpi4)
+
+The documentation here is out of date, but the example works.
+
 ## Using
 
 The most common way of using this Nerves System is create a project with `mix
