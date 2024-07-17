@@ -38,15 +38,15 @@ defmodule Example.MixProject do
       {:nerves_runtime, "~> 0.13.0"},
       {:plug_cowboy, "~> 2.0"},
       {:nerves_weston, github: "fhunleth/nerves_weston"},
-      {:nerves_cog, path: "~/git/coop/nerves_cog"},
-      {:nerves_ssh, path: "~/git/nerves-project/nerves_ssh", override: true},
+      {:nerves_cog, git: "https://github.com/coop/nerves_cog.git"},
+      {:nerves_ssh, git: "https://github.com/nerves-project/nerves_ssh.git", override: true},
 
       # Dependencies for all targets except :host
       {:nerves_pack, "~> 0.7.0", targets: @all_targets},
       {:example_ui, path: "../example_ui", targets: @all_targets, env: Mix.env()},
 
       # Dependencies for specific targets
-      {:kiosk_system_rpi4, path: "..", runtime: false, targets: :rpi4}
+      {:kiosk_system_rpi4, "~> 0.1.0", runtime: false, targets: :rpi4}
     ]
   end
 
