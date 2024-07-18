@@ -17,7 +17,8 @@ The documentation here is out of date, but the example works.
 The most common way of using this Nerves System is create a project with `mix
 nerves.new my_kiosk_app --target rpi4` and to export `MIX_TARGET=rpi4`.
 
-Then, change the rpi4 system dependency to `{:kiosk_system_rpi4, "~> 0.1.0"}`.
+Then, change the rpi4 system dependency to `{:kiosk_system_rpi4, "~> 0.1.0",
+runtime: false, target: :rpi4}`.
 
 ## Running the Kiosk
 
