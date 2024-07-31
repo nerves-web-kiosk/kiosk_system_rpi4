@@ -20,32 +20,8 @@ nerves.new my_kiosk_app --target rpi4` and to export `MIX_TARGET=rpi4`.
 Then, change the rpi4 system dependency to `{:kiosk_system_rpi4, "~> 0.1.0",
 runtime: false, target: :rpi4}`.
 
-## Running the Kiosk
+## Kiosk Example
 
-The kiosk works by starting a
-[weston](https://gitlab.freedesktop.org/wayland/weston) instance and then launching
-a [cog](https://github.com/Igalia/cog) browser inside weston at a designated
-url. Roughly it looks like this:
-
-```sh
-$ ssh nerves.local
-> cmd("mkdir /tmp/xdg")
-> cmd("chmod 700 /tmp/xdg")
-> cmd("XDG_RUNTIME_DIR=/tmp/xdg weston --tty=1 &")
-> cmd("udevd -d")
-> cmd("udevadm trigger --type=subsystems --action=add")
-> cmd("udevadm trigger --type=devices --action=add")
-> cmd("udevadm settle --timeout=30")
-> cmd("XDG_RUNTIME_DIR=/tmp/xdg WAYLAND_DISPLAY=wayland-1 cog --platform=wl http://info.cern.ch &")
-```
-
-Plug in a keyboard and display and you should see the home of the first website
-as long as you have internet.
-
-For use with this system there are some libraries that make running weston and cog easier, they are:
-
-- [nerves_weston](https://github.com/coop/nerves_weston)
-- [nerves_cog](https://github.com/coop/nerves_cog)
-
-You can see an example of how to assemble them into a working kiosk in the
-[example](/example) directory.
+Please see the
+[kiosk_example](https://github.com/nerves-web-kiosk/kiosk_example) project for
+an example of how to use this in a Nerves project.
