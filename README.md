@@ -1,5 +1,7 @@
 # Kiosk System for Raspberry Pi 4 Model B (64-bit)
 
+[![CI](https://github.com/nerves-web-kiosk/kiosk_system_rpi4/actions/workflows/ci.yml/badge.svg)](https://github.com/nerves-web-kiosk/kiosk_system_rpi4/actions/workflows/ci.yml)
+
 This is a specialised version of the
 [nerves_system_rpi4](https://github.com/nerves-project/nerves_system_rpi4) that
 includes the required packages to run a fullscreen web browser in kiosk mode.
