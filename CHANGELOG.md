@@ -12,6 +12,15 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
+## v0.1.1
+
+This is a security/bug fix update.
+
+* Package updates
+  * [nerves_system_br v1.28.2](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.28.2)
+  * [Buildroot 2024.05.1](https://lore.kernel.org/buildroot/87ed7xfq78.fsf@dell.be.48ers.dk/T/)
+  * [Erlang/OTP 27.0.1](https://erlang.org/download/OTP-27.0.1.README)
+
 ## v0.1.0
 
 This is an initial release to make it easier for more people to test Nerves web
