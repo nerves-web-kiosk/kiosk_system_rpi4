@@ -3,8 +3,8 @@ name: CI
 on: [push]
 
 env:
-  OTP_VERSION: 27.0.1
-  ELIXIR_VERSION: 1.17.2-otp-27
+  OTP_VERSION: 27.1.2
+  ELIXIR_VERSION: 1.17.3-otp-27
   NERVES_BOOTSTRAP_VERSION: 1.13.0
 
 permissions:
