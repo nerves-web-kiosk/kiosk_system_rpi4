@@ -111,7 +111,7 @@ defmodule KioskSystemRpi4.MixProject do
       "fwup-ops.conf",
       "fwup.conf",
       "LICENSES/*",
-      "linux-6.12:.defconfig",
+      "linux-6.12.defconfig",
       "mix.exs",
       "nerves_defconfig",
       "post-build.sh",
