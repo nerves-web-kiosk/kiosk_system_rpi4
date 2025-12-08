@@ -42,7 +42,7 @@ SPDX-License-Identifier = "GPL-2.0-or-later"
 [[annotations]]
 path = [
  "linux-6.12.defconfig",
- "ramoops.dts"
+ "ramoops-pi4-overlay.dts"
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "Various"
@@ -53,6 +53,7 @@ SPDX-License-Identifier = "GPL-2.0-only"
 path = [
  "fwup-ops.conf",
  "fwup.conf",
+ "fwup.conf.eex",
  "fwup_include/*"
 ]
 precedence = "aggregate"
