@@ -1,7 +1,7 @@
 # Kiosk System for Raspberry Pi 4 Model B (64-bit)
 
 [![Hex version](https://img.shields.io/hexpm/v/kiosk_system_rpi4.svg "Hex version")](https://hex.pm/packages/kiosk_system_rpi4)
-[![CI](https://github.com/nerves-web-kiosk/kiosk_system_rpi4/actions/workflows/ci.yml/badge.svg)](https://github.com/nerves-web-kiosk/kiosk_system_rpi4/actions/workflows/ci.yml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/nerves-web-kiosk/kiosk_system_rpi4/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/nerves-web-kiosk/kiosk_system_rpi4/tree/main)
 [![REUSE status](https://api.reuse.software/badge/github.com/nerves-web-kiosk/kiosk_system_rpi4)](https://api.reuse.software/info/github.com/nerves-web-kiosk/kiosk_system_rpi4)
 
 This is a specialised version of the
