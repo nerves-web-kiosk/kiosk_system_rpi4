@@ -12,6 +12,14 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
+## v0.6.1
+
+This release fixes a regression due to the Mesa3D update that would prevent cog
+from starting. Details at https://github.com/Igalia/cog/issues/774.
+
+* Updated dependencies
+  * [nerves_system_br 1.33.1](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.33.1)
+
 ## v0.6.0
 
 This is a major Buildroot and Linux update. It should be seamless for most
