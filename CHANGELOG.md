@@ -12,6 +12,22 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
+## v2.0.0-rc.3
+
+This is a major update of `kiosk_system_rpi5` that changes the MicroSD/eMMC
+layout in order to support automatic rollback of non-working firmware updates.
+
+**IMPORTANT** This is a one way upgrade. Going back to the old partitioning
+requires manually reflashing of the RPi's storage.
+
+Previous releases assumed that firmware updates worked. This one requires that
+firmware images mark themselves as good using
+`Nerves.Runtime.validate_firmware/0`. See `Nerves.Runtime` for more information
+on this. Firmware not marked as good reverts back to the previous version.
+
+Note: The double version number bump aligns the major version with other
+Raspberry Pi systems.
+
 ## v0.6.1
 
 This release fixes a regression due to the Mesa3D update that would prevent cog
