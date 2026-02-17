@@ -12,9 +12,9 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
-## v2.0.0-rc.3
+## v2.0.0
 
-This is a major update of `kiosk_system_rpi5` that changes the MicroSD/eMMC
+This is a major update of `kiosk_system_rpi4` that changes the MicroSD/eMMC
 layout in order to support automatic rollback of non-working firmware updates.
 
 **IMPORTANT** This is a one way upgrade. Going back to the old partitioning
@@ -27,6 +27,17 @@ on this. Firmware not marked as good reverts back to the previous version.
 
 Note: The double version number bump aligns the major version with other
 Raspberry Pi systems.
+
+* Changes
+  * Fix camera support by enabling the unicam-legacy Linux device driver
+  * Enabled multipath TCP support in the Linux kernel
+  * Deleted all use of `nerves_fw_active` since it was sometimes incorrect and
+    caused confusion
+
+* Package updates
+  * [nerves_system_br 1.33.2](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.33.2)
+    * [Erlang/OTP 28.3.1](https://erlang.org/download/OTP-28.3.1.README.md)
+    * [Buildroot 2025.11.1](https://lore.kernel.org/buildroot/f6496994-b279-46f4-b554-7dbe2df92782@rnout.be/T/)
 
 ## v0.6.1
 
