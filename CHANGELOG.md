@@ -12,6 +12,11 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
+## v2.0.4
+
+* Package updates
+  * [nerves_system_br 1.33.8](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.33.8)
+
 ## v2.0.3
 
 This is a security and bug fix release.
