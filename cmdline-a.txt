@@ -2,7 +2,9 @@
 # 1. serial0 is magically replaced to the right thing by the RPi bootloader.
 #    /dev/serial0 won't exist unless you make it, so don't expected it in
 #    userland.
-# 2. If not using HDMI, remove console=tty1 and consoleblank=0
-# 3. quiet skips printing kernel messages to the output and significantly
+# 2. quiet skips printing kernel messages to the output and significantly
 #    shortens boot time
-dwc_otg.lpm_enable=0 console=tty1 console=serial0,115200 fbcon=scrollback:1024k root=/dev/mmcblk0p5 rootfstype=squashfs rootwait consoleblank=0 quiet
+# 3. The RPi bootloader adds `cgroup_disable=memory`, so add
+#    `cgroup_enable=memory cgroup_memory=1` to turn it back on. This uses ~1%
+#    DRAM, so delete if unused.
+dwc_otg.lpm_enable=0 console=serial0,115200 root=/dev/mmcblk0p5 rootfstype=squashfs rootwait quiet vt.global_cursor_default=0 cgroup_enable=memory cgroup_memory=1
