@@ -40,7 +40,7 @@ If you don't do this, the device will run the old firmware on the next reboot.
 A simple default way of validating the firmware can be enabled using
 Nerves.Runtime's startup guard feature as described in [Assisted firmware
 validation and automatic
-revert](https://hexdocs.pm/nerves_runtime/readme.html#assisted-firmware-validation-and-automatic-revert).
+revert](https://nerves-runtime.hexdocs.pm/readme.html#assisted-firmware-validation-and-automatic-revert).
 Please follow the directions there for the needed config file update.
 
 If in doubt, use `mix nerves.new` to create a new project and compare what it
