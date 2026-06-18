@@ -114,7 +114,6 @@ defmodule KioskSystemRpi4.MixProject do
       "config.txt",
       "fwup-ops.conf",
       "fwup.conf.eex",
-      "fwup.conf",
       "LICENSES/*",
       "linux-6.12.defconfig",
       "mix.exs",
